@@ -121,7 +121,7 @@ footer {
 }
 
 .featured__articles:hover {
-  transform: scale(1.07);
+  transform: scale(1.02);
   transition: .500ms;
 }
 
@@ -135,7 +135,7 @@ footer {
 }
 
 
-.featured__image {
+.featured__image > a{
   max-width: 100%;
   position: relative;
   text-align: center;
@@ -154,6 +154,7 @@ footer {
   position: absolute;
   z-index: 1;
   min-width: 50px;
+  margin: 0 auto;
   bottom: -10px;
   padding: 5px 10px;
   border: 1px solid var(--border--gray);
