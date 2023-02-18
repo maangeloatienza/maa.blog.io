@@ -20,6 +20,11 @@ footer {
   padding: var(--main-padding);
 }
 
+a {
+  text-decoration: none;
+  color: inherit !important;
+}
+
 /* ============================================= */
 /* CONTAINER */
 /* ============================================= */
@@ -72,9 +77,41 @@ footer {
 }
 
 
+/* ============================================= */
+/* ARTICLES */
+/* ============================================= */
+
+.article--wrapper {
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.article--wrapper > article {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article--wrapper > article > small {
+  padding : 10px;
+}
+.article--wrapper > article > p {
+  line-height: 1.5rem;
+}
+
+.article--wrapper .article__tag {
+  min-width: 50px;
+  padding: 5px 10px;
+  border: 1px solid var(--border--gray);
+  background-color: var(--bg-white);
+  box-shadow: -2px 4px 1px var(--bg-black-shadow);
+  text-transform: uppercase;
+}
+
 
 /* ============================================= */
-/* FEATUED ARTICLES */
+/* FEATURED ARTICLES */
 /* ============================================= */
 
 .featured--wrapper {
@@ -86,7 +123,6 @@ footer {
 .featured__articles:hover {
   transform: scale(1.07);
   transition: .500ms;
-  cursor: pointer;
 }
 
 .featured__articles img  {
@@ -295,7 +331,10 @@ footer {
   .container {
     max-width: 80%;
   }
-
+  /* articles */
+  .article--wrapper {
+    width: 70%;
+  }
   /* featured-wrapper element and child */
   .featured--wrapper {
     grid-template-columns: repeat(4,1fr);
