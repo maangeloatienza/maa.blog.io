@@ -257,6 +257,7 @@ footer {
 .footer__menu--item > nav {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
 
 .footer__menu--item > nav a:visited {
@@ -275,11 +276,17 @@ footer {
   .container {
     max-width : 95%;
   }
+  .newsletter__form--group input[type="email"] {
+    width:100%;
+  }
 }
 /* sm */
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .container {
     max-width: 85%;
+  }
+  .newsletter__form--group input[type="email"] {
+    width:100%;
   }
   /* featured-wrapper element and child */
   .featured--wrapper {
